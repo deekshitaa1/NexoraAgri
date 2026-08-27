@@ -1,18 +1,16 @@
 from fastapi import FastAPI
 
-from app.core.config import settings
-
-
 app = FastAPI(
-    title=settings.app_name,
+    title="Nexora Agri API",
     version="0.1.0",
+    description="AI-powered agricultural decision intelligence platform.",
 )
 
 
 @app.get("/health")
-def health_check() -> dict[str, str]:
+def health_check():
     return {
         "status": "healthy",
-        "service": "nexora-api",
-        "environment": settings.environment,
+        "service": "nexora-agri-api",
+        "version": "0.1.0",
     }
