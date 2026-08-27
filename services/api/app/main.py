@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+from app.api.farms import router as farms_router
 from app.api.organizations import router as organizations_router
 
 
@@ -12,6 +13,11 @@ app = FastAPI(
 
 app.include_router(
     organizations_router,
+    prefix="/api/v1",
+)
+
+app.include_router(
+    farms_router,
     prefix="/api/v1",
 )
 
