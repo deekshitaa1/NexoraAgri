@@ -1,0 +1,37 @@
+{
+  "model": "RandomForestRegressor",
+  "target": "irrigation_demand_mm",
+  "features": [
+    "soil_moisture",
+    "soil_temperature",
+    "air_temperature",
+    "humidity",
+    "rainfall_mm",
+    "hour",
+    "day_of_year",
+    "moisture_change",
+    "temperature_change",
+    "rainfall_24h",
+    "rainfall_72h",
+    "moisture_24h_mean",
+    "temperature_24h_mean",
+    "moisture_deficit",
+    "heat_stress",
+    "crop",
+    "soil_type",
+    "crop_stage"
+  ],
+  "train_rows": 6131,
+  "validation_rows": 1314,
+  "test_rows": 1314,
+  "validation": {
+    "mae": 0.078408,
+    "rmse": 0.327285,
+    "r2": 0.990067
+  },
+  "test": {
+    "mae": 0.045268,
+    "rmse": 0.249362,
+    "r2": 0.987276
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "model": "RandomForestClassifier",
+  "random_state": 42,
+  "features": [
+    "soil_moisture",
+    "soil_temperature",
+    "air_temperature",
+    "humidity",
+    "rainfall_mm",
+    "hour",
+    "day_of_year",
+    "moisture_change",
+    "temperature_change",
+    "rainfall_24h",
+    "rainfall_72h",
+    "moisture_24h_mean",
+    "temperature_24h_mean",
+    "moisture_deficit",
+    "heat_stress",
+    "crop",
+    "soil_type",
+    "crop_stage"
+  ],
+  "target": "irrigation_class",
+  "validation": {
+    "rows": 1314,
+    "accuracy": 0.954337899543379,
+    "macro_f1": 0.9510553373494981,
+    "weighted_f1": 0.9542332418718463,
+    "classification_report": {
+      "NONE": {
+        "precision": 0.9666666666666667,
+        "recall": 0.8877551020408163,
+        "f1-score": 0.925531914893617,
+        "support": 196.0
+      },
+      "LOW": {
+        "precision": 0.9197860962566845,
+        "recall": 0.9717514124293786,
+        "f1-score": 0.945054945054945,
+        "support": 354.0
+      },
+      "MEDIUM": {
+        "precision": 0.9735234215885947,
+        "recall": 0.9540918163672655,
+        "f1-score": 0.9637096774193549,
+        "support": 501.0
+      },
+      "HIGH": {
+        "precision": 0.9591078066914498,
+        "recall": 0.9809885931558935,
+        "f1-score": 0.9699248120300752,
+        "support": 263.0
+      },
+      "accuracy": 0.954337899543379,
+      "macro avg": {
+        "precision": 0.954770997800849,
+        "recall": 0.9486467309983384,
+        "f1-score": 0.9510553373494981,
+        "support": 1314.0
+      },
+      "weighted avg": {
+        "precision": 0.9551381522962482,
+        "recall": 0.954337899543379,
+        "f1-score": 0.9542332418718463,
+        "support": 1314.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        174,
+        19,
+        3,
+        0
+      ],
+      [
+        5,
+        344,
+        5,
+        0
+      ],
+      [
+        1,
+        11,
+        478,
+        11
+      ],
+      [
+        0,
+        0,
+        5,
+        258
+      ]
+    ]
+  },
+  "test": {
+    "rows": 1314,
+    "accuracy": 0.9535768645357686,
+    "macro_f1": 0.9436360208833134,
+    "weighted_f1": 0.9541010273326618,
+    "classification_report": {
+      "NONE": {
+        "precision": 0.9950331125827815,
+        "recall": 0.9600638977635783,
+        "f1-score": 0.9772357723577236,
+        "support": 626.0
+      },
+      "LOW": {
+        "precision": 0.8812664907651715,
+        "recall": 0.9737609329446064,
+        "f1-score": 0.925207756232687,
+        "support": 343.0
+      },
+      "MEDIUM": {
+        "precision": 0.9645390070921985,
+        "recall": 0.9220338983050848,
+        "f1-score": 0.9428076256499134,
+        "support": 295.0
+      },
+      "HIGH": {
+        "precision": 0.9387755102040817,
+        "recall": 0.92,
+        "f1-score": 0.9292929292929293,
+        "support": 50.0
+      },
+      "accuracy": 0.9535768645357686,
+      "macro avg": {
+        "precision": 0.9449035301610583,
+        "recall": 0.9439646822533173,
+        "f1-score": 0.9436360208833132,
+        "support": 1314.0
+      },
+      "weighted avg": {
+        "precision": 0.9563492522158886,
+        "recall": 0.9535768645357686,
+        "f1-score": 0.9541010273326616,
+        "support": 1314.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        601,
+        24,
+        0,
+        1
+      ],
+      [
+        3,
+        334,
+        6,
+        0
+      ],
+      [
+        0,
+        21,
+        272,
+        2
+      ],
+      [
+        0,
+        0,
+        4,
+        46
+      ]
+    ]
+  }
+}
