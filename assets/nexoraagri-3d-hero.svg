@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf4e3"/><stop offset="1" stop-color="#c6dfb5"/></linearGradient>
+  <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8a633e"/><stop offset="1" stop-color="#4e3425"/></linearGradient>
+  <linearGradient id="crop" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#77b852"/><stop offset="1" stop-color="#246b35"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".96"/><stop offset="1" stop-color="#edf4e8" stop-opacity=".93"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-opacity=".18"/></filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+<title id="title">NexoraAgri — 3D agricultural decision intelligence</title>
+<desc id="desc">A premium 3D farm landscape with crop rows, soil layers, weather sensors, irrigation water and an AI decision panel.</desc>
+
+<rect width="1600" height="760" rx="38" fill="url(#sky)"/>
+<circle cx="1370" cy="120" r="130" fill="#fff" opacity=".28" filter="url(#soft)"/>
+<path d="M0 330 Q260 220 510 315 T1030 290 T1600 250 V760 H0Z" fill="#8fbd72" opacity=".55"/>
+<path d="M0 405 Q300 300 600 390 T1200 355 T1600 320 V760 H0Z" fill="#5f9c52" opacity=".7"/>
+
+<!-- title -->
+<text x="92" y="108" font-family="Inter,Arial,sans-serif" font-size="62" font-weight="800" fill="#173b22">Nexora<tspan fill="#4d922f">Agri</tspan></text>
+<text x="96" y="155" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="600" fill="#31563a">AI-Powered Agricultural Decision Intelligence</text>
+<text x="96" y="195" font-family="Inter,Arial,sans-serif" font-size="18" fill="#49634d">Field observations → temporal intelligence → ML inference → irrigation decisions</text>
+
+<!-- 3D field slab -->
+<g filter="url(#shadow)">
+  <polygon points="470,385 1040,300 1420,425 850,525" fill="#315d35"/>
+  <polygon points="470,385 850,525 850,625 470,485" fill="url(#soil)"/>
+  <polygon points="850,525 1420,425 1420,525 850,625" fill="#5b3d2b"/>
+  <polygon points="470,385 1040,300 1420,425 850,525" fill="#4f8f3f"/>
+  <!-- crop rows -->
+  <g fill="url(#crop)" stroke="#1f5b31" stroke-width="3">
+    <path d="M650 387 l12 -74 12 74 -12 35z"/><path d="M710 400 l12 -78 12 78 -12 38z"/><path d="M770 413 l12 -80 12 80 -12 38z"/>
+    <path d="M835 400 l12 -84 12 84 -12 40z"/><path d="M900 390 l12 -82 12 82 -12 38z"/><path d="M965 377 l12 -80 12 80 -12 37z"/>
+    <path d="M1030 365 l12 -78 12 78 -12 36z"/><path d="M1095 378 l12 -82 12 82 -12 38z"/><path d="M1160 390 l12 -78 12 78 -12 36z"/>
+    <path d="M720 452 l12 -78 12 78 -12 38z"/><path d="M790 468 l12 -82 12 82 -12 40z"/><path d="M860 484 l12 -84 12 84 -12 40z"/>
+    <path d="M930 470 l12 -80 12 80 -12 38z"/><path d="M1000 455 l12 -82 12 82 -12 38z"/><path d="M1070 442 l12 -78 12 78 -12 36z"/>
+  </g>
+  <!-- soil strata -->
+  <path d="M500 440 Q670 500 850 555 T1385 475" fill="none" stroke="#b88757" stroke-width="14" opacity=".75"/>
+  <path d="M500 472 Q670 530 850 588 T1385 510" fill="none" stroke="#6f4a32" stroke-width="10" opacity=".9"/>
+</g>
+
+<!-- sensor mast -->
+<g filter="url(#shadow)">
+  <rect x="600" y="270" width="12" height="115" rx="6" fill="#52655a"/>
+  <rect x="565" y="255" width="82" height="10" rx="5" fill="#52655a"/>
+  <circle cx="575" cy="250" r="15" fill="#d9e5d7" stroke="#3d6546" stroke-width="5"/>
+  <circle cx="635" cy="250" r="15" fill="#d9e5d7" stroke="#3d6546" stroke-width="5"/>
+  <rect x="588" y="190" width="42" height="42" rx="7" fill="#f4f8ef" stroke="#52754b" stroke-width="5"/>
+  <path d="M595 218 l14 -28 14 28z" fill="#4f8f3f"/>
+</g>
+
+<!-- irrigation pipe -->
+<path d="M510 455 C650 500 760 525 890 555 S1160 545 1325 485" fill="none" stroke="#b9e6c2" stroke-width="13" stroke-linecap="round" opacity=".95"/>
+<g fill="#64b5e3" opacity=".9">
+ <path d="M700 490 q18 24 0 42 q-18 -18 0 -42z"/><path d="M880 535 q18 24 0 42 q-18 -18 0 -42z"/><path d="M1080 532 q18 24 0 42 q-18 -18 0 -42z"/>
+</g>
+
+<!-- decision panel -->
+<g filter="url(#shadow)">
+ <rect x="1070" y="105" width="425" height="225" rx="24" fill="url(#panel)" stroke="#d5e4cf" stroke-width="2"/>
+ <text x="1105" y="148" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#416047">IRRIGATION DECISION</text>
+ <text x="1105" y="193" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="800" fill="#246b35">HIGH PRIORITY</text>
+ <text x="1105" y="223" font-family="Inter,Arial,sans-serif" font-size="15" fill="#607263">Water demand estimate</text>
+ <rect x="1105" y="238" width="320" height="13" rx="7" fill="#dce8d8"/>
+ <rect x="1105" y="238" width="245" height="13" rx="7" fill="#5b9e3d"/>
+ <text x="1360" y="251" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" fill="#31563a">78%</text>
+ <text x="1105" y="286" font-family="Inter,Arial,sans-serif" font-size="14" fill="#4f6254">Moisture ↓   Rainfall ↓   Temperature ↑</text>
+ <circle cx="1440" cy="175" r="27" fill="#dcefdc"/>
+ <path d="M1440 153 C1425 174 1427 187 1440 197 C1453 187 1455 174 1440 153Z" fill="#4e9bd1"/>
+</g>
+
+<!-- bottom capability cards -->
+<g filter="url(#shadow)">
+ <rect x="80" y="585" width="330" height="108" rx="20" fill="url(#panel)"/>
+ <rect x="430" y="585" width="330" height="108" rx="20" fill="url(#panel)"/>
+ <rect x="780" y="585" width="330" height="108" rx="20" fill="url(#panel)"/>
+ <rect x="1130" y="585" width="330" height="108" rx="20" fill="url(#panel)"/>
+</g>
+<g font-family="Inter,Arial,sans-serif">
+ <text x="110" y="620" font-size="17" font-weight="800" fill="#24482c">FIELD CONTEXT</text>
+ <text x="110" y="648" font-size="14" fill="#607263">Soil · Crop · Growth stage</text>
+ <text x="110" y="671" font-size="14" fill="#607263">Historical observations</text>
+ <text x="460" y="620" font-size="17" font-weight="800" fill="#24482c">TEMPORAL INTELLIGENCE</text>
+ <text x="460" y="648" font-size="14" fill="#607263">Rolling features · trends</text>
+ <text x="460" y="671" font-size="14" fill="#607263">Lag signals · rainfall history</text>
+ <text x="810" y="620" font-size="17" font-weight="800" fill="#24482c">ML INFERENCE</text>
+ <text x="810" y="648" font-size="14" fill="#607263">Classification + regression</text>
+ <text x="810" y="671" font-size="14" fill="#607263">Irrigation + water demand</text>
+ <text x="1160" y="620" font-size="17" font-weight="800" fill="#24482c">EXPLAINABLE OUTPUT</text>
+ <text x="1160" y="648" font-size="14" fill="#607263">Decision signals + recommendation</text>
+ <text x="1160" y="671" font-size="14" fill="#607263">Built for field-level action</text>
+</g>
+</svg>
