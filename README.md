@@ -134,7 +134,7 @@ Historical Observations
                  Predictive Signals
 ```
 
-This enables the system to capture **how field conditions are evolving**, which is critical for irrigation decision-making.
+This enable the system to capture **how field conditions are evolving**, which is critical for irrigation decision-making.
 
 ---
 
